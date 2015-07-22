@@ -46,4 +46,8 @@ group :development, :test do
   gem 'capybara'
   gem 'pry-rails'
 end
+
+
+#heroku stuff
 ruby "2.1.5"
+gem 'puma'
