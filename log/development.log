@@ -87,3 +87,647 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (2.8ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Affenpinscher' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Affenpinscher"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Afghan Hound' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Afghan Hound"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Airedale Terrier' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Airedale Terrier"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Akita' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Akita"], ["size", 5], ["kid_friendly", 1], ["pet_friendly", 1], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Alaskan Malamute' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Alaskan Malamute"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Cocker Spaniel' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Cocker Spaniel"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Eskimo Dog (mini)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Eskimo Dog (mini)"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 1], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Eskimo Dog (standard)' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Eskimo Dog (standard)"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 1], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Eskimo Dog (toy)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Eskimo Dog (toy)"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 1], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Foxhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Foxhound"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Staffordshire Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Staffordshire Terrier"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'American Water Spaniel' LIMIT 1
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "American Water Spaniel"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Anatolian Shepherd' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Anatolian Shepherd"], ["size", 5], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 2], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Australian Cattle Dog' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Australian Cattle Dog"], ["size", 3], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 2], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Australian Shepherd' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Australian Shepherd"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 4], ["space", 3], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Australian Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Australian Terrier"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Basenji' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Basenji"], ["size", 2], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Basset Hound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Basset Hound"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 1], ["activity_level", 1], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Beagle' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beagle"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bearded Collie' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bearded Collie"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (1.1ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Beauceron' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Beauceron"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 2], ["trainability", 2], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bedlington Terrier' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bedlington Terrier"], ["size", 2], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Belgian Malinois' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Belgian Malinois"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Belgian Sheepdog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Belgian Sheepdog"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 4], ["trainability", 4], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Belgian Tervuren' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Belgian Tervuren"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bernese Mountain Dog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bernese Mountain Dog"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 3], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bichon Frise' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bichon Frise"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 4], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Black & Tan Coonhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Black & Tan Coonhound"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Black Russian Terrier' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Black Russian Terrier"], ["size", 5], ["kid_friendly", 2], ["pet_friendly", 1], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bloodhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bloodhound"], ["size", 5], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 3], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Border Collie' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Border Collie"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 3], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Borzoi' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Borzoi"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Boston Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Boston Terrier"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 2], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bouvier des Flandres' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bouvier des Flandres"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Boxer' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Boxer"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Briard' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Briard"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Brittany' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Brittany"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Brussels Griffon' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Brussels Griffon"], ["size", 2], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bull Terrier' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bull Terrier"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 2], ["trainability", 4], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bulldog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bulldog"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Bullmastiff' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Bullmastiff"], ["size", 5], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 1], ["activity_level", 1], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Cairn Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Cairn Terrier"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Canaan Dog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Canaan Dog"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Cane Corso' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Cane Corso"], ["size", 5], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 4], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Cardigan Welsh Corgi' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Cardigan Welsh Corgi"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 4], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Catahoula Leopard Dog' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Catahoula Leopard Dog"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 2], ["space", 4], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Cavalier King Charles Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Cavalier King Charles Spaniel"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Chesapeake Bay Retriever' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Chesapeake Bay Retriever"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 3], ["trainability", 4], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Chihuahua' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Chihuahua"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Chinese Crested Dog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Chinese Crested Dog"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 4], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 1], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Chinese Shar-Pei' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Chinese Shar-Pei"], ["size", 3], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 1], ["need_for_attention", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Chinook' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Chinook"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 4], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Chow Chow' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Chow Chow"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 2], ["activity_level", 1], ["need_for_attention", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Clumber Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Clumber Spaniel"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Collie' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Collie"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 4], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Coton du Tulear' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Coton du Tulear"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 4], ["trainability", 4], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Curly-Coated Retriever' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Curly-Coated Retriever"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.8ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Dachshund (mini)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Dachshund (mini)"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Dachshund (standard)' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Dachshund (standard)"], ["size", 3], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Dalmatian' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Dalmatian"], ["size", 3], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Dandle Dinmont Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Dandle Dinmont Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Doberman Pinscher' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Doberman Pinscher"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'English Cocker Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "English Cocker Spaniel"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 4], ["trainability", 4], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'English Foxhound' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "English Foxhound"], ["size", 4], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'English Setter' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "English Setter"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 4], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'English Springer Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "English Springer Spaniel"], ["size", 3], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 4], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'English Toy Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "English Toy Spaniel"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 4], ["trainability", 2], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.6ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Field Spaniel' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Field Spaniel"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.8ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Finnish Spitz' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Finnish Spitz"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Flat-Coated Retriever' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Flat-Coated Retriever"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 4], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'French Bulldog' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "French Bulldog"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'German Pinscher' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "German Pinscher"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'German Shepherd' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "German Shepherd"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'German Shorthaired Pointer' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "German Shorthaired Pointer"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'German Wirehaired Pointer' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "German Wirehaired Pointer"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Giant Schnauzer' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Giant Schnauzer"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Glen of Imaal Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Glen of Imaal Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Golden Retriever' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Golden Retriever"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 2], ["trainability", 4], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Gordon Setter' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Gordon Setter"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 4], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Great Dane' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Great Dane"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 1], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Great Pyrenees' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Great Pyrenees"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Greater Swiss Mountain Dog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Greater Swiss Mountain Dog"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Greyhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Greyhound"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 1], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Harrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Harrier"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 4], ["activity_level", 4], ["need_for_attention", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Havanese' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Havanese"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Ibizan Hound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ibizan Hound"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 1], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Irish Setter' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Irish Setter"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 3], ["trainability", 3], ["space", 4], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Irish Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Irish Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Irish Water Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Irish Water Spaniel"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Irish Wolfhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Irish Wolfhound"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Italian Greyhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Italian Greyhound"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 1], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Japanese Chin' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Japanese Chin"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 1], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Keeshond' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Keeshond"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 4], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Kerry Blue Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kerry Blue Terrier"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Komondor' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Komondor"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 4], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Kuvasz' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kuvasz"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Labrador Retriever' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Labrador Retriever"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 4], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Lakeland Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lakeland Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Lhasa Apso' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lhasa Apso"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.6ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Lowchen' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Lowchen"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Maltese' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Maltese"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Manchester Terrier (standard)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Manchester Terrier (standard)"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Manchester Terrier (toy)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Manchester Terrier (toy)"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Mastiff' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mastiff"], ["size", 5], ["kid_friendly", 3], ["pet_friendly", 1], ["grooming", 2], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Miniature Pinscher' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Miniature Pinscher"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 2], ["trainability", 2], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Miniature Schnauzer' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Miniature Schnauzer"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Neapolitan Mastiff' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Neapolitan Mastiff"], ["size", 5], ["kid_friendly", 3], ["pet_friendly", 1], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Newfoundland' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Newfoundland"], ["size", 5], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Norfolk Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Norfolk Terrier"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 4], ["grooming", 2], ["trainability", 4], ["space", 1], ["activity_level", 3], ["need_for_attention", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Norwegian Elkhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Norwegian Elkhound"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (1.2ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Norwich Terrier' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Norwich Terrier"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 4], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.7ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Nova Scotia Duck Tolling Retriever' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Nova Scotia Duck Tolling Retriever"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Old English Sheepdog' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Old English Sheepdog"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.6ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Otterhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Otterhound"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Papillon' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Papillon"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Pekingese' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Pekingese"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Pembroke Welsh Corgi' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Pembroke Welsh Corgi"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Petit Bassett Griffon Vendeen' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Petit Bassett Griffon Vendeen"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 2], ["trainability", 4], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Pharaoh Hound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Pharaoh Hound"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.9ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Plott' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Plott"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 1], ["trainability", 3], ["space", 4], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Pointer' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Pointer"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 1], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Polish Lowland Sheepdog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Polish Lowland Sheepdog"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Pomeranian' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Pomeranian"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 1], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Poodle (mini)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Poodle (mini)"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 4], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Poodle (standard)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Poodle (standard)"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 4], ["space", 3], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Poodle (toy)' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Poodle (toy)"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 4], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Portuguese Water Dog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Portuguese Water Dog"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 4], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Pug' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Pug"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Puli' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Puli"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Redbone Coonhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Redbone Coonhound"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 2], ["space", 3], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Rhodesian Ridgeback' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Rhodesian Ridgeback"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 1], ["trainability", 4], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Rottweiler' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Rottweiler"], ["size", 5], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 1], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Saint Bernard' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Saint Bernard"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 3], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Saluki' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Saluki"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 4], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Samoyed' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Samoyed"], ["size", 5], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 4], ["trainability", 2], ["space", 3], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Schipperke' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Schipperke"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 2], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Scottish Deerhound' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Scottish Deerhound"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Scottish Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Scottish Terrier"], ["size", 2], ["kid_friendly", 2], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Sealyham Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sealyham Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 2], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Shetland Sheepdog' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Shetland Sheepdog"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 3], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Shiba Inu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Shiba Inu"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 1], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Shih Tzu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Shih Tzu"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Siberian Husky' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Siberian Husky"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 4], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Silky Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Silky Terrier"], ["size", 1], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.4ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Skye Terrier' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Skye Terrier"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 2], ["space", 1], ["activity_level", 2], ["need_for_attention", 3]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Soft Coated Wheaten Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Soft Coated Wheaten Terrier"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Staffordshire Bull Terrier' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Staffordshire Bull Terrier"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 1], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.9ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Standard Schnauzer' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Standard Schnauzer"], ["size", 3], ["kid_friendly", 3], ["pet_friendly", 1], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Sussex Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sussex Spaniel"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 4], ["grooming", 2], ["trainability", 4], ["space", 1], ["activity_level", 2], ["need_for_attention", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Tibetan Mastiff' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Tibetan Mastiff"], ["size", 5], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 2], ["trainability", 2], ["space", 2], ["activity_level", 3], ["need_for_attention", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Tibetan Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Tibetan Spaniel"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Tibetan Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Tibetan Terrier"], ["size", 2], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Toy Fox Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Toy Fox Terrier"], ["size", 1], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 1], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Vizsla' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Vizsla"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Weimeraner' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Weimeraner"], ["size", 4], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Welsh Springer Spaniel' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Welsh Springer Spaniel"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Welsh Terrier' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Welsh Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 3], ["trainability", 3], ["space", 2], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'West Highland White Terrier' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "West Highland White Terrier"], ["size", 2], ["kid_friendly", 3], ["pet_friendly", 2], ["grooming", 3], ["trainability", 3], ["space", 1], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Whippet' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Whippet"], ["size", 3], ["kid_friendly", 4], ["pet_friendly", 3], ["grooming", 1], ["trainability", 3], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Wirehaired Pointing Griffon' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Wirehaired Pointing Griffon"], ["size", 4], ["kid_friendly", 3], ["pet_friendly", 3], ["grooming", 2], ["trainability", 3], ["space", 3], ["activity_level", 4], ["need_for_attention", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mBreed Exists (0.5ms)[0m  SELECT  1 AS one FROM "breeds" WHERE "breeds"."name" = 'Yorkshire Terrier' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "breeds" ("name", "size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Yorkshire Terrier"], ["size", 1], ["kid_friendly", 4], ["pet_friendly", 2], ["grooming", 4], ["trainability", 3], ["space", 1], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
