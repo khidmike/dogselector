@@ -46,3 +46,4 @@ group :development, :test do
   gem 'capybara'
   gem 'pry-rails'
 end
+ruby "2.1.5"
