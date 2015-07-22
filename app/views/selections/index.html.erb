@@ -1,0 +1,12 @@
+<head>
+<div id=header><h2>Selections</h2></div>
+</head>
+
+<body>
+  <% @selections.each do |selection| %>
+    <p><%= selection.user %> chose a  <%= selection.size %></p>
+  <% end %>
+  <br>
+  <%= link_to("I wanna go again!", root_path) %>
+
+</body>

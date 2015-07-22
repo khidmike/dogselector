@@ -1,0 +1,103 @@
+<head>
+<center><div id=header><h1>Let's Pick You a Dog</h1></div></center>
+</head>
+
+<body>
+<script type="text/javascript">
+user = prompt("What's your name?")
+alert("Hi, "+user +"! Let's get started, shall we?")
+</script>
+<%form action="selections/index" method="GET">
+  <div id=q1>Firstly, what size dog do you want? Please Select one:
+    <br>
+    <input type="checkbox" name="size" value=1>Toy (less than 11 lbs)
+    <br>
+    <input type="checkbox" name="size" value=2>Small (11-22 lbs)
+    <br>
+    <input type="checkbox" name="size" value=3>Medium (22-44 lbs)
+    <br>
+    <input type="checkbox" name="size" value=4>Large (44-88 lbs)
+    <br>
+    <input type="checkbox" name="size" value=5>Giant (88 lbs and up)
+  </div>
+  <br>
+  <div id=q2>Cool. Now, where do you live?
+    <br>
+    <input type="radio" name="space" value=1 checked>Apartment
+    <br>
+    <input type="radio" name="space" value=2>Large Apartment
+    <br>
+    <input type="radio" name="space" value=3>House with yard
+    <br>
+    <input type="radio" name="space" value=4>House with large yard
+  </div>
+  <br>
+  <div id=q3>And how much time do you spend at home?
+    <br>
+    <input type="radio" name="need_for_attention" value=1 checked>I want more of a roommate than a best friend.
+    <br>
+    <input type="radio" name="need_for_attention" value=2>I want a dog that wants to play sometimes, but largely does his own thing.
+    <br>
+    <input type="radio" name="need_for_attention" value=3>I want a buddy, but one who is okay spending some time by himself, such as when I go to work.
+    <br>
+    <input type="radio" name="need_for_attention" value=4>I do not intend to leave my dog alone for long, and want him to be as affectionate as possible.
+  </div>
+  <br>
+  <div id=q4>Sounds great. Now, how active do you want your dog to be?
+    <br>
+    <input type="radio" name="activity_level" value=1 checked>I'm a couch potato, and my pooch should be, too!
+    <br>
+    <input type="radio" name="activity_level" value=2>I can probably provide 20-30 minutes of exercise every day.
+    <br>
+    <input type="radio" name="activity_level" value=3>I can probably provide 45-60 minutes of exercise every day.
+    <br>
+    <input type="radio" name="activity_level" value=4>I'm active, so I want a dog that will want to accompany me on long walks, runs, and hikes!
+  </div>
+  <br>
+  <div id=q5>Do you have any children living with you or visiting your home?
+    <br>
+    <input type="radio" name="kid_friendly" value=1 checked>I do not have kids, so friendliness towards kids is not too important.
+    <br>
+    <input type="radio" name="kid_friendly" value=2>All the kids in my home are more than 7 years of age.
+    <br>
+    <input type="radio" name="kid_friendly" value=3>I have young kids, and the dog should at least tolerate them.
+    <br>
+    <input type="radio" name="kid_friendly" value=4>I have young kids, and I want the dog to be gentle and to enjoy playing with them.
+  </div>
+  <br>
+  <div id=q6>What about other pets?
+    <br>
+    <input type="radio" name="pet_friendly" value=1 checked>I do not have any other pets, and do not need my dog to be friendly towards other animals.
+    <br>
+    <input type="radio" name="pet_friendly" value=2>I want my dog to be friendly towards other dogs / cats, even if socialization is necessary.
+    <br>
+    <input type="radio" name="pet_friendly" value=3>I have other dogs / cats in the house, and want my new dog to be friendly with them.
+    <br>
+    <input type="radio" name="pet_friendly" value=4>I live in a zoo, so my dog must be able to tolerate other animals, from cats to chicks to lizards to gerbils!
+  </div>
+  <br>
+  <div id=q7>Awesome. This is coming together! So, how trainable should your new dog be?
+    <br>
+    <input type="radio" name="trainability" value=1 checked>I'm lax with rules, so it's cool if my dog is independent.
+    <br>
+    <input type="radio" name="trainability" value=2>This isn't my first dog, and I have some experience with them, so I don't mind a dog that can be tough to train.
+    <br>
+    <input type="radio" name="trainability" value=3>I want my dog to learn all the basic commands with ease.
+    <br>
+    <input type="radio" name="trainability" value=4>I want to teach my dog all sorts of cool tricks, so I want one that's smart and wants to please.
+  </div>
+  <br>
+  <div id=q8>Last question: how much grooming do you want to be doing?
+    <br>
+    <input type="radio" name="grooming" value=1 checked>As little as humanly possible. A bath every week or so should be all my dog needs.
+    <br>
+    <input type="radio" name="grooming" value=2>I can give my dog a weekly bath and the occassional brushing.
+    <br>
+    <input type="radio" name="grooming" value=3>I want a beautiful dog, even if this means he'll require frequent brushing.
+    <br>
+    <input type="radio" name="grooming" value=4>I have no problem brushing and bathing my dog frequently, and even making trips to the groomer.
+  </div>
+<center><input type="submit" value="Show me what I got!"></center>
+</form>
+
+</body>

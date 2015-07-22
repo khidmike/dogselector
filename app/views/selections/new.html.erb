@@ -1,0 +1,153 @@
+<head>
+<center><div id=header><h1>Let's Pick You a Dog</h1></div></center>
+</head>
+
+<body>
+<%= form_for @selection, url: {action: "create"} do |f| %>
+
+  <div id="user">
+    <%= f.label :"First, let's get your name" %>
+    <br>
+    <%= f.text_field :user %>
+  </div>
+  <br>
+
+  <div id="q1">
+    <%= f.label :"Let's get started! Firstly, what size dog do you want? Please Select one:" %>
+    <br>
+    <%= f.radio_button :size, "1"%>
+    <%= f.label :"Toy (under 11 lbs)" %>
+    <br>
+    <%= f.radio_button :size, "2" %>
+    <%= f.label :"Small (11-22 lbs)" %>
+    <br>
+    <%= f.radio_button :size, "3" %>
+    <%= f.label :"Medium (22-44 lbs)" %>
+    <br>
+    <%= f.radio_button :size, "4" %>
+    <%= f.label :"Large (44-88 lbs)" %>
+    <br>
+    <%= f.radio_button :size, "5" %>
+    <%= f.label :"Giant (88 lbs and up)" %>
+  </div>
+  <br>
+  <div id="q2">
+    <%= f.label :"Where do you live?" %>
+    <br>
+    <%= f.radio_button :space, "1" %>
+    <%= f.label :"Apartment" %>
+    <br>
+    <%= f.radio_button :space, "2" %>
+    <%= f.label :"Large Apartment" %>
+    <br>
+    <%= f.radio_button :space, "3" %>
+    <%= f.label :"House with yard" %>
+    <br>
+    <%= f.radio_button :space, "4" %>
+    <%= f.label :"House with large yard" %>
+  </div>
+  <br>
+  <div id="q3">
+    <%= f.label :"And how much time do you spend at home?" %>
+    <br>
+    <%= f.radio_button :need_for_attention, "1" %>
+    <%= f.label :"I want more of a roommate than a best friend." %>
+    <br>
+    <%= f.radio_button :need_for_attention, "2" %>
+    <%= f.label :"I want a dog that wants to play sometimes, but largely does his own thing." %>
+    <br>
+    <%= f.radio_button :need_for_attention, "3" %>
+    <%= f.label :"I want a friend, but one who is okay spending some time by himself, such as when I go to work." %>
+    <br>
+    <%= f.radio_button :need_for_attention, "4" %>
+    <%= f.label :"I do not intend to leave my dog alone for long, and want him to be as affectionate as possible." %>
+  </div>
+  <br>
+  <div id="q4">
+    <%= f.label :"How active do you want your dog to be?" %>
+    <br>
+    <%= f.radio_button :activity_level, "1" %>
+    <%= f.label :"I'm a couch potato, and my pooch should be, too!" %>
+    <br>
+    <%= f.radio_button :activity_level, "2" %>
+    <%= f.label :"I can probably provide 20-30 minutes of exercise every day." %>
+    <br>
+    <%= f.radio_button :activity_level, "3" %>
+    <%= f.label :"I can probably provide 45-60 minutes of exercise every day." %>
+    <br>
+    <%= f.radio_button :activity_level, "4" %>
+    <%= f.label :"I'm active, so I want a dog that will want to accompany me on long walks, runs, and hikes!" %>
+  </div>
+  <br>
+  <div id="q5">
+    <%= f.label :"Do you have any children living with you or visiting your home?" %>
+    <br>
+    <%= f.radio_button :kid_friendly, "1" %>
+    <%= f.label :"I do not have kids, so friendliness towards kids is not too important." %>
+    <br>
+    <%= f.radio_button :kid_friendly, "2" %>
+    <%= f.label :"All the kids in my home are more than 7 years of age." %>
+    <br>
+    <%= f.radio_button :kid_friendly, "3" %>
+    <%= f.label :"I have young kids, and the dog should at least tolerate them." %>
+    <br>
+    <%= f.radio_button :kid_friendly, "4" %>
+    <%= f.label :"I have young kids, and I want the dog to be gentle and to enjoy playing with them." %>
+  </div>
+  <br>
+  <div id="q6">
+    <%= f.label :"What about other pets?" %>
+    <br>
+    <%= f.radio_button :pet_friendly, "1" %>
+    <%= f.label :"I do not have any other pets, and do not need my dog to be friendly towards other animals." %>
+    <br>
+    <%= f.radio_button :pet_friendly, "2" %>
+    <%= f.label :"I want my dog to be friendly towards other dogs / cats, even if socialization is necessary." %>
+    <br>
+    <%= f.radio_button :pet_friendly, "3" %>
+    <%= f.label :"I have other dogs / cats in the house, and want my new dog to be friendly with them." %>
+    <br>
+    <%= f.radio_button :pet_friendly, "4" %>
+    <%= f.label :"I live in a zoo, so my dog must be able to tolerate other animals, from cats to chicks to lizards to gerbils!" %>
+  </div>
+  <br>
+  <div id="q7">
+    <%= f.label :"So, how trainable should your new dog be?" %>
+    <br>
+    <%= f.radio_button :trainability, "1" %>
+    <%= f.label :"I'm lax with rules, so it's cool if my dog is independent." %>
+    <br>
+    <%= f.radio_button :trainability, "2" %>
+    <%= f.label :"This isn't my first dog, and I have some experience with them, so I don't mind a dog that can be tough to train." %>
+    <br>
+    <%= f.radio_button :trainability, "3" %>
+    <%= f.label :"I want my dog to learn all the basic commands with ease." %>
+    <br>
+    <%= f.radio_button :trainability, "4" %>
+    <%= f.label :"I want to teach my dog all sorts of cool tricks, so I want one that's smart and wants to please." %>
+  </div>
+  <br>
+  <div id="q8">
+    <%= f.label :"Last question: how much grooming do you want to be doing?" %>
+    <br>
+    <%= f.radio_button :grooming, "1" %>
+    <%= f.label :"As little as humanly possible- A bath every week or so should be all my dog needs." %>
+    <br>
+    <%= f.radio_button :grooming, "2" %>
+    <%= f.label :"I can give my dog a weekly bath and the occassional brushing." %>
+    <br>
+    <%= f.radio_button :grooming, "3" %>
+    <%= f.label :"I want a beautiful dog, even if this means he'll require frequent brushing." %>
+    <br>
+    <%= f.radio_button :grooming, "4" %>
+    <%= f.label :"I have no problem brushing and bathing my dog frequently, and even making trips to the groomer." %>
+  </div>
+  <br>
+  <br>
+  <div id="button">
+    <%= f.submit "Show me what I got" %>
+  </div>
+  <br>
+<% end %>
+
+</body>

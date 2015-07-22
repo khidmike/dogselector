@@ -1,0 +1,47 @@
+head {
+  background-color: black;
+/*   { background-image: url(<%= asset_data_uri 'dogbanner.jpg' %>) }*/
+ }
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+#q1 {
+  color: #600000;
+  font-weight: 400;
+}
+
+#q2 {
+  color: grey;
+}
+
+#q3 {
+  color: grey;
+}
+
+#q4 {
+  color: grey;
+}
+
+#q5 {
+  color: grey;
+}
+
+#q6 {
+  color: grey;
+}
+
+#q7 {
+  color: grey;
+}
+
+#q8 {
+  color: grey;
+}
+
+
+body {
+  background-color: #d0e4fe;
+}
