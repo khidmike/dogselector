@@ -1,6 +1,8 @@
+<body>
 <% @selection.choices.each do |choice| %>
-  <li><%= choice.name %></li>
+  <p><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></p>
   <br>
 <% end %>
+</body>
 <br>
 <%= link_to("I wanna go again!", root_path) %>
