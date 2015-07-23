@@ -8,7 +8,7 @@
 
 <% else %>
   <% @selection.choices.each do |choice| %>
-    <p><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></p>
+    <li id="q"><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></li>
     <br>
   <% end %>
 <% end %>

@@ -2115,3 +2115,1134 @@ PG::FeatureNotSupported: ERROR:  cached plan must not change result type
   [1m[35mBreed Load (0.7ms)[0m  SELECT "breeds".* FROM "breeds" WHERE (size = 3 AND kid_friendly >= 2 AND pet_friendly >= 2 AND grooming <= 2 AND trainability >= 2 AND space <= 2 AND activity_level = 3 AND need_for_attention = 3)
   Rendered selections/show.html.erb within layouts/application (20.0ms)
 Completed 200 OK in 67ms (Views: 52.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/selections/1" for ::1 at 2015-07-23 14:56:22 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSelection Load (0.7ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 3 AND kid_friendly >= 2 AND pet_friendly >= 2 AND grooming <= 2 AND trainability >= 2 AND space <= 2 AND activity_level = 3 AND need_for_attention = 3)
+  [1m[36mBreed Load (1.2ms)[0m  [1mSELECT "breeds".* FROM "breeds" WHERE (size = 3 AND kid_friendly >= 2 AND pet_friendly >= 2 AND grooming <= 2 AND trainability >= 2 AND space <= 2 AND activity_level = 3 AND need_for_attention = 3)[0m
+  Rendered selections/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 169ms (Views: 163.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/assets/application.self-2141c8624602ae6a5feafd8f5e1512302fd6d872c8a1160277a12b74226eb4a0.css?body=1" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 14:56:22 -0400
+
+
+Started GET "/selections/1" for ::1 at 2015-07-23 14:56:51 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSelection Load (0.5ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "breeds" WHERE (size = 3 AND kid_friendly >= 2 AND pet_friendly >= 2 AND grooming <= 2 AND trainability >= 2 AND space <= 2 AND activity_level = 3 AND need_for_attention = 3)[0m
+  [1m[35mBreed Load (0.8ms)[0m  SELECT "breeds".* FROM "breeds" WHERE (size = 3 AND kid_friendly >= 2 AND pet_friendly >= 2 AND grooming <= 2 AND trainability >= 2 AND space <= 2 AND activity_level = 3 AND need_for_attention = 3)
+  Rendered selections/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 62ms (Views: 58.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 14:56:51 -0400
+
+
+Started GET "/assets/application.self-296072c641fc79b125818f646ff27833452b191875ec140c6723366a34643d10.css?body=1" for ::1 at 2015-07-23 14:56:51 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 14:56:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 14:56:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 14:56:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 14:56:51 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 14:56:52 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 14:59:10 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/assets/application.self-5807d51995d8b915b40430bf141d36d2add8f90ec42ea08deade2eb256dacf15.css?body=1" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 14:59:10 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:01:38 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/assets/application.self-5371f8ae1945b30878ce1f499dd34698927086d415b394278658eec057a7ceae.css?body=1" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 15:01:38 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:01:47 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/assets/application.self-6afe616281b910d656dec2df79fe69199e0bc74508b5e1c5e2325ddb88aa10c3.css?body=1" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 15:01:47 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:02:11 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/assets/application.self-2080c9883730101979485191c30d1990a60b321f9e8570008ae005e95a050850.css?body=1" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 15:02:12 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:03:44 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 15:03:44 -0400
+
+
+Started GET "/" for ::1 at 2015-07-23 15:07:00 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/breeds/new" for ::1 at 2015-07-23 15:07:02 -0400
+
+ActionController::RoutingError (No route matches [POST] "/breeds/new"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.0ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (22.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (47.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:07:35 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:07:35 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:07:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:07:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:07:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:07:35 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:07:35 -0400
+
+
+Started POST "/selections/new" for ::1 at 2015-07-23 15:07:37 -0400
+
+ActionController::RoutingError (No route matches [POST] "/selections/new"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (39.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:08:33 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"selections/new", :controller=>"breeds"}):
+    13: </div>
+    14: 
+    15: <center>
+    16: <%= button_to "let's do this", action: "selections/new" %>
+    17: </center>
+    18: 
+    19: </body>
+  app/views/breeds/front.html.erb:16:in `_app_views_breeds_front_html_erb__397249901561862420_70351737238900'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (40.1ms)
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:09:06 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:09:07 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:09:07 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:09:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:09:07 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:09:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:09:07 -0400
+
+
+Started GET "/" for ::1 at 2015-07-23 15:09:10 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/breeds/new" for ::1 at 2015-07-23 15:09:12 -0400
+
+ActionController::RoutingError (No route matches [POST] "/breeds/new"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (12.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (52.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:11:49 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"selections/new", :controller=>"breeds", :method=>"get"}):
+    13: </div>
+    14: 
+    15: <center>
+    16: <%= button_to "let's do this", action: "selections/new", method: "get" %>
+    17: </center>
+    18: 
+    19: </body>
+  app/views/breeds/front.html.erb:16:in `_app_views_breeds_front_html_erb__397249901561862420_70351737621340'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.2ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (43.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:12:07 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:12:07 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:12:07 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:12:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:12:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:12:07 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:12:07 -0400
+
+
+Started POST "/breeds/new?method=get" for ::1 at 2015-07-23 15:12:09 -0400
+
+ActionController::RoutingError (No route matches [POST] "/breeds/new"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (38.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:12:49 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:12:49 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:12:49 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:12:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:12:49 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:12:49 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:12:49 -0400
+
+
+Started POST "/breeds/new?method=get" for ::1 at 2015-07-23 15:12:51 -0400
+
+ActionController::RoutingError (No route matches [POST] "/breeds/new"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.0ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (40.7ms)
+
+
+Started POST "/breeds/new?method=get" for ::1 at 2015-07-23 15:13:15 -0400
+Processing by SelectionsController#new as HTML
+  Parameters: {"authenticity_token"=>"6xiN9nFL1mS6wZWUe56FVUhEr/YNj8g/edgVyR4BNdB0RVpJNtlCh8Va/Obl8SbUQbI1QQfuOJK6TrCaeNEfaw==", "method"=>"get"}
+  Rendered selections/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 69ms (Views: 51.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:13:15 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:13:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:13:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:13:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:13:16 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:13:16 -0400
+
+
+Started GET "/" for ::1 at 2015-07-23 15:13:18 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:13:18 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:13:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:13:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:13:18 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:13:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:13:18 -0400
+
+
+Started POST "/breeds/new?method=get" for ::1 at 2015-07-23 15:13:20 -0400
+Processing by SelectionsController#new as HTML
+  Parameters: {"authenticity_token"=>"+fE9vNOVhutar1bknculx1S+qETW+hN/DE1lw27QLk9mrOoDlAcSCCU0P5YDpAZGXUgy89yb49LP28CQCAAE9A==", "method"=>"get"}
+  Rendered selections/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/selections" for ::1 at 2015-07-23 15:13:35 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5l6dwFdK50xZXHEz/BjNSrmkz8dlY29sFE62+yQxJS0xK3IRs+/fk7+GLZRn8C0IxAJiBf0fRBzx5+IikDuLw==", "selection"=>{"size"=>"2", "space"=>"3", "need_for_attention"=>"2", "activity_level"=>"2", "kid_friendly"=>"2", "pet_friendly"=>"3", "trainability"=>"1", "grooming"=>"2"}, "commit"=>"Show me what I got"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["size", 2], ["kid_friendly", 2], ["pet_friendly", 3], ["grooming", 2], ["trainability", 1], ["space", 3], ["activity_level", 2], ["need_for_attention", 2]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/selections/2
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/selections/2" for ::1 at 2015-07-23 15:13:35 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSelection Load (0.6ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "breeds" WHERE (size = 2 AND kid_friendly >= 2 AND pet_friendly >= 3 AND grooming <= 2 AND trainability >= 1 AND space <= 3 AND activity_level = 2 AND need_for_attention = 2)[0m
+  Rendered selections/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/selections" for ::1 at 2015-07-23 15:13:46 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5l6dwFdK50xZXHEz/BjNSrmkz8dlY29sFE62+yQxJS0xK3IRs+/fk7+GLZRn8C0IxAJiBf0fRBzx5+IikDuLw==", "selection"=>{"size"=>"2", "space"=>"3", "need_for_attention"=>"2", "activity_level"=>"2", "kid_friendly"=>"2", "pet_friendly"=>"1", "trainability"=>"1", "grooming"=>"4"}, "commit"=>"Show me what I got"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["size", 2], ["kid_friendly", 2], ["pet_friendly", 1], ["grooming", 4], ["trainability", 1], ["space", 3], ["activity_level", 2], ["need_for_attention", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/selections/3
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/selections/3" for ::1 at 2015-07-23 15:13:46 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSelection Load (0.6ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 2 AND kid_friendly >= 2 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 3 AND activity_level = 2 AND need_for_attention = 2)
+  Rendered selections/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/breeds/new?method=get" for ::1 at 2015-07-23 15:13:48 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for BreedsController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (42.6ms)
+
+
+Started POST "/breeds/new?method=get" for ::1 at 2015-07-23 15:14:03 -0400
+Processing by SelectionsController#new as HTML
+  Parameters: {"authenticity_token"=>"+fE9vNOVhutar1bknculx1S+qETW+hN/DE1lw27QLk9mrOoDlAcSCCU0P5YDpAZGXUgy89yb49LP28CQCAAE9A==", "method"=>"get"}
+  Rendered selections/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/breeds/new?method=get" for ::1 at 2015-07-23 15:14:11 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for BreedsController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (39.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:14:35 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:14:35 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:14:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:14:35 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:14:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:14:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:14:35 -0400
+
+
+Started POST "/breeds/new?method=get" for ::1 at 2015-07-23 15:14:36 -0400
+Processing by SelectionsController#new as HTML
+  Parameters: {"authenticity_token"=>"HTVZk3Mp8iwhWZnRqviBnXfPLCklFW19PtmjqAzcWtWCaI4sNLtmz17C8KM0lyIcfjm2ni90ndD9Twb7agxwbg==", "method"=>"get"}
+  Rendered selections/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 72ms (Views: 52.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/breeds/new?method=get" for ::1 at 2015-07-23 15:14:42 -0400
+Processing by BreedsController#new as HTML
+  Parameters: {"method"=>"get"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template breeds/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/michaelkhidekel/dogselector/app/views"
+):
+  actionview (4.2.2) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.2) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.2) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.2) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.2) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.2) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.2) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.2) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.2) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/michaelkhidekel/.rubies/ruby-2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.12.2) lib/puma/server.rb:539:in `handle_request'
+  puma (2.12.2) lib/puma/server.rb:386:in `process_client'
+  puma (2.12.2) lib/puma/server.rb:269:in `block in run'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.12.2) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (28.9ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/michaelkhidekel/.gem/ruby/2.1.5/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (37.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:16:11 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:16:12 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:16:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:16:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:16:12 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:16:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:16:12 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:16:17 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 78ms (Views: 64.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 15:21:11 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 15:21:16 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/selections" for ::1 at 2015-07-23 15:22:16 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IRuJaixtQCtoFMqRh8Ady/3L3omhEBTR/df3Q4xhJmy+Rl7Va//UyBePo+MZr75K9D1EPqtx5Hw+QVIQ6rEM1w==", "selection"=>{"size"=>"4", "space"=>"3", "need_for_attention"=>"3", "activity_level"=>"3", "kid_friendly"=>"1", "pet_friendly"=>"1", "trainability"=>"1", "grooming"=>"3"}, "commit"=>"Show me what I got"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["size", 4], ["kid_friendly", 1], ["pet_friendly", 1], ["grooming", 3], ["trainability", 1], ["space", 3], ["activity_level", 3], ["need_for_attention", 3]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/selections/4
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/selections/4" for ::1 at 2015-07-23 15:22:16 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSelection Load (0.5ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)
+  Rendered selections/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 62ms (Views: 54.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/selections/4" for ::1 at 2015-07-23 15:25:37 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSelection Load (0.6ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)
+  [1m[36mBreed Load (1.2ms)[0m  [1mSELECT "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)[0m
+  Rendered selections/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 44ms (Views: 39.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:25:37 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:25:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:25:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:25:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:25:37 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:25:37 -0400
+
+
+Started GET "/selections/4" for ::1 at 2015-07-23 15:25:54 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)
+  Rendered selections/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:25:54 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:25:54 -0400
+
+
+Started GET "/assets/application.self-308e181e7983d50411355a7762d2dc5fbbc74b51c56a4a6421f9a3b6d5a184b4.css?body=1" for ::1 at 2015-07-23 15:25:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:25:54 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:25:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:25:54 -0400
+
+
+Started GET "/selections/4" for ::1 at 2015-07-23 15:27:09 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)
+  [1m[36mBreed Load (0.9ms)[0m  [1mSELECT "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 3 AND trainability >= 1 AND space <= 3 AND activity_level = 3 AND need_for_attention = 3)[0m
+  Rendered selections/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/assets/application.self-f97880e8353b7e0ab141443d9b6c545c3ec68517d90996f9c5ab8195fb2c57fc.css?body=1" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 15:27:10 -0400

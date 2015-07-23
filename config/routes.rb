@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :breeds
   resources :selections, controller: "selections"
   get "breeds/selections/index" => "selections#index"
+  post "breeds/new" => "selections#new"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

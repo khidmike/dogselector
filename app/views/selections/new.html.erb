@@ -4,11 +4,8 @@
 
 <body>
 <%= form_for @selection, url: {action: "create"} do |f| %>
-
-
   <br>
-
-  <div id="q1">
+  <div id="q">
     <%= f.label :"Let's get started! Firstly, what size dog do you want? Please Select one:" %>
     <br>
     <%= f.radio_button :size, "1"%>
@@ -27,7 +24,7 @@
     <%= f.label :"Giant (88 lbs and up)" %>
   </div>
   <br>
-  <div id="q2">
+  <div id="q">
     <%= f.label :"Where do you live?" %>
     <br>
     <%= f.radio_button :space, "1" %>
@@ -43,7 +40,7 @@
     <%= f.label :"House with large yard" %>
   </div>
   <br>
-  <div id="q3">
+  <div id="q">
     <%= f.label :"And how much time do you spend at home?" %>
     <br>
     <%= f.radio_button :need_for_attention, "1" %>
@@ -59,7 +56,7 @@
     <%= f.label :"I do not intend to leave my dog alone for long, and want him to be as affectionate as possible." %>
   </div>
   <br>
-  <div id="q4">
+  <div id="q">
     <%= f.label :"How active do you want your dog to be?" %>
     <br>
     <%= f.radio_button :activity_level, "1" %>
@@ -75,7 +72,7 @@
     <%= f.label :"I'm active, so I want a dog that will want to accompany me on long walks, runs, and hikes!" %>
   </div>
   <br>
-  <div id="q5">
+  <div id="q">
     <%= f.label :"Do you have any children living with you or visiting your home?" %>
     <br>
     <%= f.radio_button :kid_friendly, "1" %>
@@ -91,7 +88,7 @@
     <%= f.label :"I have young kids, and I want the dog to be gentle and to enjoy playing with them." %>
   </div>
   <br>
-  <div id="q6">
+  <div id="q">
     <%= f.label :"What about other pets?" %>
     <br>
     <%= f.radio_button :pet_friendly, "1" %>
@@ -107,7 +104,7 @@
     <%= f.label :"I live in a zoo, so my dog must be able to tolerate other animals, from cats to chicks to lizards to gerbils!" %>
   </div>
   <br>
-  <div id="q7">
+  <div id="q">
     <%= f.label :"So, how trainable should your new dog be?" %>
     <br>
     <%= f.radio_button :trainability, "1" %>
@@ -123,7 +120,7 @@
     <%= f.label :"I want to teach my dog all sorts of cool tricks, so I want one that's smart and wants to please." %>
   </div>
   <br>
-  <div id="q8">
+  <div id="q">
     <%= f.label :"Last question: how much grooming do you want to be doing?" %>
     <br>
     <%= f.radio_button :grooming, "1" %>
