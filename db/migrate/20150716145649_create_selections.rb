@@ -1,7 +1,6 @@
 class CreateSelections < ActiveRecord::Migration
   def change
     create_table :selections do |t|
-      t.string :user, null:false
       t.integer :size, null: false
       t.integer :kid_friendly, null: false
       t.integer :pet_friendly, null: false

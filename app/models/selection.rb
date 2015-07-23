@@ -1,6 +1,5 @@
 class Selection < ActiveRecord::Base
 
-  validates :user, presence: true
   validates :size, presence: true
   validates :kid_friendly, presence: true
   validates :pet_friendly, presence: true

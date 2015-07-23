@@ -25,7 +25,6 @@ class SelectionsController < ApplicationController
 
   def selection_params
      params.require(:selection).permit(
-       :user,
        :size,
        :kid_friendly,
        :pet_friendly,

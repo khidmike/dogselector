@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20150716145649) do
   end
 
   create_table "selections", force: :cascade do |t|
-    t.string  "user",               null: false
     t.integer "size",               null: false
     t.integer "kid_friendly",       null: false
     t.integer "pet_friendly",       null: false
