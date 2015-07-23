@@ -1,7 +1,16 @@
+<head>
+<center><div id=header><h2>Breeds that fit your criteria: </h2></div></center>
+</head>
+
 <body>
-<% @selection.choices.each do |choice| %>
-  <p><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></p>
-  <br>
+<% if @selection.choices.empty? %>
+  <h4>Nothing matched your criteria =(  Click your browser's "Back" button to refine your search! </h4>
+
+<% else %>
+  <% @selection.choices.each do |choice| %>
+    <p><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></p>
+    <br>
+  <% end %>
 <% end %>
 </body>
 <br>
