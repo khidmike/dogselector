@@ -8,10 +8,10 @@
 
 <% else %>
   <% @selection.choices.each do |choice| %>
-    <li id="q"><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></li>
+    <a><li id="choice"><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></li></a>
     <br>
   <% end %>
 <% end %>
 </body>
 <br>
-<%= link_to("I wanna go again!", root_path) %>
+<%= button_to "I wanna go again!", root_path, method: "get" %>

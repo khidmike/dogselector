@@ -3246,3 +3246,1205 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 15:27:10 -0400
+
+
+Started GET "/" for ::1 at 2015-07-23 15:37:02 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 16:05:31 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (89.8ms)
+Completed 200 OK in 186ms (Views: 167.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/selections" for ::1 at 2015-07-23 16:05:48 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2w4XDTiwgxZ6JaISKXQ9uQeZVNamiIJMDKfMlWfkgDtEU8CyfyIX9QW+y2C3G544Dm/OYazpcuHPMWnGATSqgA==", "selection"=>{"size"=>"2", "space"=>"2", "need_for_attention"=>"2", "activity_level"=>"4", "kid_friendly"=>"2", "pet_friendly"=>"1", "trainability"=>"2", "grooming"=>"2"}, "commit"=>"Show me what I got"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["size", 2], ["kid_friendly", 2], ["pet_friendly", 1], ["grooming", 2], ["trainability", 2], ["space", 2], ["activity_level", 4], ["need_for_attention", 2]]
+  [1m[35m (1.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/selections/5
+Completed 302 Found in 19ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/selections/5" for ::1 at 2015-07-23 16:05:48 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSelection Load (0.5ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 2 AND kid_friendly >= 2 AND pet_friendly >= 1 AND grooming <= 2 AND trainability >= 2 AND space <= 2 AND activity_level = 4 AND need_for_attention = 2)
+  Rendered selections/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 16:05:50 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-23 16:09:05 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 181ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:09:05 -0400
+
+
+Started GET "/assets/application.self-e47b8a00cf12ceaf9e2cd88f84c70769ef3f4d3bd3d6962f37e1f0779e61a776.css?body=1" for ::1 at 2015-07-23 16:09:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:09:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:09:05 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:09:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:09:05 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:09:06 -0400
+
+
+Started GET "/" for ::1 at 2015-07-23 16:09:20 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/assets/application.self-5924431f5f2fecb57f8f54f983f1796e193fa8d1a6d28040ed1994353c4e7ccb.css?body=1" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:09:20 -0400
+
+
+Started GET "/" for ::1 at 2015-07-23 16:09:39 -0400
+Processing by BreedsController#front as HTML
+  Rendered breeds/front.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/assets/application.self-d6c588aa80a722e15740372130c28de3c55ad6ea1a86c3b55745259063e67d8e.css?body=1" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:09:39 -0400
+
+
+Started GET "/selections/new" for ::1 at 2015-07-23 16:17:22 -0400
+Processing by SelectionsController#new as HTML
+  Rendered selections/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 165ms (Views: 125.3ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/selections" for ::1 at 2015-07-23 16:17:49 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nWeBc5rgqcB/uTLUyXpoE+/DCoCCs+ESqYc99VEgNYkCOlbM3XI9IwAiW6ZXFcuS5jWQN4jSEb9qEZimN/AfMg==", "selection"=>{"size"=>"3", "space"=>"4", "need_for_attention"=>"4", "activity_level"=>"2", "kid_friendly"=>"1", "pet_friendly"=>"1", "trainability"=>"1", "grooming"=>"4"}, "commit"=>"Show me what I got"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["size", 3], ["kid_friendly", 1], ["pet_friendly", 1], ["grooming", 4], ["trainability", 1], ["space", 4], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/selections/6
+Completed 302 Found in 9ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/selections/6" for ::1 at 2015-07-23 16:17:49 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mSelection Load (0.5ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 3 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 2 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 3 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 2 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 66ms (Views: 57.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/selections/6" for ::1 at 2015-07-23 16:18:01 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 3 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 2 AND need_for_attention = 4)
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT "breeds".* FROM "breeds" WHERE (size = 3 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 2 AND need_for_attention = 4)[0m
+  Rendered selections/show.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 67ms (Views: 48.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:18:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:18:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:18:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:18:02 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:18:02 -0400
+
+
+Started GET "/assets/application.self-d6c588aa80a722e15740372130c28de3c55ad6ea1a86c3b55745259063e67d8e.css?body=1" for ::1 at 2015-07-23 16:18:02 -0400
+
+
+Started POST "/selections" for ::1 at 2015-07-23 16:18:18 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nWeBc5rgqcB/uTLUyXpoE+/DCoCCs+ESqYc99VEgNYkCOlbM3XI9IwAiW6ZXFcuS5jWQN4jSEb9qEZimN/AfMg==", "selection"=>{"size"=>"4", "space"=>"4", "need_for_attention"=>"4", "activity_level"=>"2", "kid_friendly"=>"1", "pet_friendly"=>"1", "trainability"=>"1", "grooming"=>"4"}, "commit"=>"Show me what I got"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["size", 4], ["kid_friendly", 1], ["pet_friendly", 1], ["grooming", 4], ["trainability", 1], ["space", 4], ["activity_level", 2], ["need_for_attention", 4]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/selections/7
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/selections/7" for ::1 at 2015-07-23 16:18:18 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSelection Load (0.3ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 2 AND need_for_attention = 4)
+  [1m[36mBreed Load (0.9ms)[0m  [1mSELECT "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 2 AND need_for_attention = 4)[0m
+  Rendered selections/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/selections" for ::1 at 2015-07-23 16:18:33 -0400
+Processing by SelectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nWeBc5rgqcB/uTLUyXpoE+/DCoCCs+ESqYc99VEgNYkCOlbM3XI9IwAiW6ZXFcuS5jWQN4jSEb9qEZimN/AfMg==", "selection"=>{"size"=>"4", "space"=>"4", "need_for_attention"=>"4", "activity_level"=>"3", "kid_friendly"=>"1", "pet_friendly"=>"1", "trainability"=>"1", "grooming"=>"4"}, "commit"=>"Show me what I got"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "selections" ("size", "kid_friendly", "pet_friendly", "grooming", "trainability", "space", "activity_level", "need_for_attention") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["size", 4], ["kid_friendly", 1], ["pet_friendly", 1], ["grooming", 4], ["trainability", 1], ["space", 4], ["activity_level", 3], ["need_for_attention", 4]]
+  [1m[35m (1.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/selections/8
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:18:33 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4)
+  [1m[36mBreed Load (0.9ms)[0m  [1mSELECT "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4)[0m
+  Rendered selections/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:18:42 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.7ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 80ms (Views: 47.9ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:18:42 -0400
+
+
+Started GET "/assets/application.self-d6c588aa80a722e15740372130c28de3c55ad6ea1a86c3b55745259063e67d8e.css?body=1" for ::1 at 2015-07-23 16:18:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:18:42 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:18:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:18:42 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:18:42 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:21:15 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (1.1ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 67ms (Views: 62.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/assets/application.self-acd28cc8f8862ece02baef42bfeedd7a55d97a7614a1b608fca3fc39e374c883.css?body=1" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:21:15 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:22:28 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (1.0ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:22:28 -0400
+
+
+Started GET "/assets/application.self-acd28cc8f8862ece02baef42bfeedd7a55d97a7614a1b608fca3fc39e374c883.css?body=1" for ::1 at 2015-07-23 16:22:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:22:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:22:28 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:22:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:22:28 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:22:44 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.9ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:22:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:22:44 -0400
+
+
+Started GET "/assets/application.self-b7f1115b2cf478ba77c50dcde25048b16db749546c88fc9df3d05b26624bfe9b.css?body=1" for ::1 at 2015-07-23 16:22:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:22:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:22:44 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:22:44 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:22:45 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:22:51 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/assets/application.self-5e12098770440531bb852621b94bd181639247118e9c6c33e0dabbec996a5f41.css?body=1" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:22:51 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:22:57 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-b7f1115b2cf478ba77c50dcde25048b16db749546c88fc9df3d05b26624bfe9b.css?body=1" for ::1 at 2015-07-23 16:22:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:22:57 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:22:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:22:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:22:57 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:22:57 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:23:01 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.8ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 33.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:23:01 -0400
+
+
+Started GET "/assets/application.self-b7f1115b2cf478ba77c50dcde25048b16db749546c88fc9df3d05b26624bfe9b.css?body=1" for ::1 at 2015-07-23 16:23:01 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:23:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:23:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:23:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:23:01 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:23:12 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.9ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/assets/application.self-3e34656f8a892f32b5e412421ea60dac5558373deaf947681ff1c857ee3f1b6c.css?body=1" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:23:12 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:23:20 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:23:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:23:20 -0400
+
+
+Started GET "/assets/application.self-5e12098770440531bb852621b94bd181639247118e9c6c33e0dabbec996a5f41.css?body=1" for ::1 at 2015-07-23 16:23:20 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:23:20 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:23:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:23:20 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:24:18 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.9ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 65ms (Views: 60.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/assets/application.self-8cfbba576425a4146565a5fcaaa3877c3f7157df7dcac34227a68976caa4f32e.css?body=1" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:24:18 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:24:41 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:24:41 -0400
+
+
+Started GET "/assets/application.self-8cfbba576425a4146565a5fcaaa3877c3f7157df7dcac34227a68976caa4f32e.css?body=1" for ::1 at 2015-07-23 16:24:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:24:41 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:24:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:24:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:24:41 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:24:50 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.3ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (1.2ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:24:50 -0400
+
+
+Started GET "/assets/application.self-8cfbba576425a4146565a5fcaaa3877c3f7157df7dcac34227a68976caa4f32e.css?body=1" for ::1 at 2015-07-23 16:24:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:24:50 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:24:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:24:50 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:24:50 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:24:52 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (1.1ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:24:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:24:52 -0400
+
+
+Started GET "/assets/application.self-8cfbba576425a4146565a5fcaaa3877c3f7157df7dcac34227a68976caa4f32e.css?body=1" for ::1 at 2015-07-23 16:24:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:24:52 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:24:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:24:52 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:25:20 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/assets/application.self-f0cd5e29ffb4a96e0c292a43759b7bcef8f26f5ec38c943db2eda085cd10511c.css?body=1" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:25:21 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:26:06 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.8ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 62ms (Views: 57.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/assets/application.self-55e0e56683b4dc1204c6453258bec8d9a8e70b690938dcf0e66f2b476c6bc069.css?body=1" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:26:06 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:26:17 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/assets/application.self-160d2adc1b868b651971a79435bf34f28e0bdc2a74d15e723c047a1b526baa4a.css?body=1" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:26:18 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:26:26 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.3ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/assets/application.self-bad5be09f94e34edf9f52c6ff780a33d23ad0f99015cc653fe9d6bf552d6adef.css?body=1" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:26:26 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:26:33 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.5ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/assets/application.self-d20a9adfdd0f9bc3583cf3ae7873f728e51a0afb1d1f74cc7d911489458955dd.css?body=1" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:26:34 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:27:18 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.6ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 61ms (Views: 56.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/assets/application.self-07cfd586a71d75abecc445aff3aa135d83f3be2a684fa110690e78fa197ed5aa.css?body=1" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:27:18 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:27:25 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (1.0ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 67ms (Views: 62.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/assets/application.self-a271aad2c9270845f6341d131d3e9c8fcb452d2f481e29a7ce6618e288a1524e.css?body=1" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:27:25 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:27:37 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.8ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:27:37 -0400
+
+
+Started GET "/assets/application.self-07cfd586a71d75abecc445aff3aa135d83f3be2a684fa110690e78fa197ed5aa.css?body=1" for ::1 at 2015-07-23 16:27:37 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:27:37 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:27:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:27:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:27:37 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:33:05 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.6ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (1.0ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 71ms (Views: 65.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/assets/application.self-afbad64f7a42672a1e72a61a7cf43b4d6e9c16f23d9ace8e8ac4f2036515df31.css?body=1" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:33:05 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:33:07 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:33:08 -0400
+
+
+Started GET "/assets/application.self-afbad64f7a42672a1e72a61a7cf43b4d6e9c16f23d9ace8e8ac4f2036515df31.css?body=1" for ::1 at 2015-07-23 16:33:08 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:33:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:33:08 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:33:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:33:08 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:33:33 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/assets/application.self-0b3da40a81ce27b6092f2d9a717d3c77f4f0cdf752f626cc45a78c096c12f1a9.css?body=1" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:33:33 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:33:43 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-462dd515e86d4938440112e7cfb4972c17ec6a579a7af6da14c270441065c71d.css?body=1" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:33:43 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:33:53 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (1.1ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/assets/application.self-155ffaa360cedd4dc78d5b984458e66f74e2523d050305992451e356da5056e6.css?body=1" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:33:53 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:33:56 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.3ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-155ffaa360cedd4dc78d5b984458e66f74e2523d050305992451e356da5056e6.css?body=1" for ::1 at 2015-07-23 16:33:57 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:33:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:33:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:33:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:33:57 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:33:57 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:34:09 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/assets/application.self-a6bcbbcdd7facc5a3b835774d5beabf270ac70783eb35b1db77dcabb9d00fd69.css?body=1" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:34:09 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:34:15 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (0.9ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/assets/application.self-9fdaddf73b7810dfddb07006d43347456766d39edbe869ba5aee1664b28d3bcb.css?body=1" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:34:15 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:34:31 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 62ms (Views: 57.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/assets/application.self-63011e7c2cbfe566dc1c2a9164f18b0d8e3dbe9669286c0b5749e7f0e10137f4.css?body=1" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:34:31 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:34:46 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (1.0ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.self-8a7c71d687f60e0638bed87f8393426db5b078b67722d6951f8bc0664334d198.css?body=1" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:34:46 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:34:58 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSelection Load (0.4ms)[0m  [1mSELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count
+  [1m[36mBreed Load (0.8ms)[0m  [1mSELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5[0m
+  Rendered selections/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/assets/application.self-4dd2518006467f5c1d8754109b551c7b55eec746af6fe4ab71833bfd49c43035.css?body=1" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:34:58 -0400
+
+
+Started GET "/selections/8" for ::1 at 2015-07-23 16:35:05 -0400
+Processing by SelectionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSelection Load (0.4ms)[0m  SELECT  "selections".* FROM "selections" WHERE "selections"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5) subquery_for_count[0m
+  [1m[35mBreed Load (1.0ms)[0m  SELECT  "breeds".* FROM "breeds" WHERE (size = 4 AND kid_friendly >= 1 AND pet_friendly >= 1 AND grooming <= 4 AND trainability >= 1 AND space <= 4 AND activity_level = 3 AND need_for_attention = 4) LIMIT 5
+  Rendered selections/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/styling.self-bc37133871cc09350bef57252e955d383d37d73439ef6694b1425aff3316538b.css?body=1" for ::1 at 2015-07-23 16:35:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-23 16:35:05 -0400
+
+
+Started GET "/assets/application.self-d67d152142834b53df957a4694e0840d8bba2d7e9ca31d816502be76436db4e2.css?body=1" for ::1 at 2015-07-23 16:35:05 -0400
+
+
+Started GET "/assets/application.self-eb0696cc3dfa6cc9cdf58261a584eb3cecc199ad9dc1d5f0600bfce3e85523a3.js?body=1" for ::1 at 2015-07-23 16:35:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-23 16:35:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-23 16:35:05 -0400
+
+
+Started GET "/assets/dogbanner-91f5cddd07df239521436bf272c571c0da4b5740ae9bf6c184e871c1221cd762.jpg" for ::1 at 2015-07-23 16:35:06 -0400
