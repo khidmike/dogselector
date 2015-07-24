@@ -1,21 +1,26 @@
+
 <head>
 <center><div id=header><h2>Breeds that fit your criteria: </h2></div></center>
 </head>
 
 <body>
 <% if @selection.choices.empty? %>
-  <h4>Nothing matched your criteria =(  Click your browser's "Back" button to refine your search! </h4>
+  <h3>Nothing matched your criteria =(  Click your browser's "Back" button to refine your search! </h3>
 
 <% else %>
   <br>
-  <h4>Here are some breeds that meet your criteria. Click on each name to learn more about that type of dog!</h4>
+  <h3>Here are a few breeds that meet your criteria. Click on each name to learn more about that type of dog!</h3>
   <h5>(Including pictures of puppies)</h5>
   <br>
-  <% @selection.choices.each do |choice| %>
-    <a><li id="choice"><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></li></a>
-    <br>
-  <% end %>
+  <table>
+    <% @selection.choices.each do |choice| %>
+      <tr>
+        <td><a><%= link_to choice.name, "http://www.google.com/search?q=#{choice.name}" %></a></td>
+        <br>
+      </tr>
+      <% end %>
 <% end %>
+  </table>
+  <br>
+  <center><%= button_to "I wanna go again!", root_path, method: "get", :class => "button" %></center>
 </body>
-<br>
-<div class="button"><%= button_to "I wanna go again!", root_path, method: "get", :class => "button" %></div>

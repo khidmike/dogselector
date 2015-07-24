@@ -16,40 +16,53 @@
 
 #header {
 background-image: url('<%= asset_path('dogbanner.jpg') %> ');
+align-content: center;
 height: 250px;
+background-repeat: initial;
 }
 
-h1 {
- color: blue;
+head, body {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+table {
+  width: auto;
+  align-items: left;
+  padding-left: 25px;
+}
+
+tr {
+  height: 50px;
+}
+
+td {
+  font-size: 120%;
+}
+
+h1, h2, h3 {
+ color: darkblue;
  text-align: center;
- font-family: Georgia, serif;
-}
+ font-family: Didot, serif;
 
-h2 {
-  color: blue;
-  text-align: center;
-  font-family: Georgia, serif;
-}
-
-h4 {
-  color: darkblue;
-  text-align: center;
-  font-family: Georgia, serif;
 }
 
 h5 {
   color: darkblue;
   text-align: center;
-  font-family: Georgia, serif;
+  font-family: Didot, serif;
   font-style: italic;
+  font-size: 100%;
+
 }
 
 li {
   list-style-type: none;
+  font-size: 120%;
 }
 
 #intro {
-  font-family: Georgia, serif;
+  font-family: Didot, serif;
   font-style: bold;
   color: #600000;
 }
@@ -57,13 +70,13 @@ li {
 #q {
  color: #600000;
  font-weight: 400;
- font-family: Georgia, serif;
+ font-family: Didot, serif;
  padding: 5px;
  padding-left: 50px;
 }
 
 a:link {
-  font-family: Georgia, serif;
+  font-family: Didot, serif;
   padding: 25px;
   text-align: center;
   text-decoration: none;
@@ -72,11 +85,12 @@ a:link {
 
 .button {
   width: 150px;
-  height: 50px;
+  height: 150px;
   font-size: 500%;
-  font-family: Georgia, serif;
+  font-family: Didot, serif;
 }
 
 body {
-background-color: #d0e4fe;
+  background-color: #d0e4fe;
+  padding-bottom: 50px;
 }
